@@ -44,7 +44,7 @@ fetch('recherche.php/?id=' + id[1])
     .then((data) => {
         data.forEach(element => {
             let e = document.createElement('p');
-            e.innerHTML = 'Nom: ' + element.Nom + '</br>Numéro: ' + element.Numéro + '</br>Génération: ' + element.Génération + '</br>Evolution de: ' + element.Evolution;
+            e.innerHTML = 'Nom: ' + element.Nom + '</br>Numéro: ' + element.Numéro + '</br>Génération: ' + element.Génération + '</br>Evolution de: ' + element.Evolution + '</br>Double Type: ' + element.DoubleType;
             result.appendChild(e);
         });
     })
